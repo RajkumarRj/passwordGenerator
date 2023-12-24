@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.container{
+  width: fit-content;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #24232b;
+  border-radius: 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pass-show, .char-len{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pass-show button{
+  width: fit-content;
+  height: 40px;
+  text-transform: uppercase;
+  background-color:#2a8b8b ;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.char-len p{
+  font-weight: 700;
+}
+.range-slider input{
+  width: 100%;
+}
+.inp-lab{
+  color: white;
+  font-weight: 500;
+  padding: 20px 10px 10px 10px;
+}
+.check-box{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gen-but button{
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  color: white;
+  background-color: #2a8b8b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.errorMessage{
+  color: red;
+  font-weight: 700;
+  padding-bottom: 10px;
 }
+
