@@ -53,7 +53,7 @@ const Hello =()=>{
                 <input 
                 type="range" 
                 min={4}
-                max={20} 
+                max={100} 
                 value={length} 
                 onChange={(e)=> setLength(e.target.value)}
                 />
